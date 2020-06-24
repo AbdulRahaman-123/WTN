@@ -1,17 +1,16 @@
 package com.wipro.flow_control_statements;
 
-public class problem2
+public class problem16 
 {
 	public static void main(String args[])
 	{
 		int n=Integer.parseInt(args[0]);
-		if(n%2==0)
+		int r=0;
+		while(n>0)
 		{
-			System.out.println("even");
-		}
-		else
-		{
-			System.out.println("odd");
+			r=n%10;
+			System.out.print(r);
+			n=n/10;
 		}
 	}
 

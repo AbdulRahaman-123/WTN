@@ -1,17 +1,22 @@
-package com.wipro.Arrays;
+package com.wipro.flow_control_statements;
 
 public class problem1 
 {
-	public static void main(String args[]) 
+	public static void main(String args[])
 	{
-        int []arr=new int[] {1,32,23,4,15};  
-        int sum=0,avg;  
-        for (int i=0;i<arr.length;i++) 
-        {  
-           sum=sum+arr[i];  
-        }  
-        avg=sum/5;
-        System.out.println("Sum of the array "+sum);
-        System.out.println("the average is "+avg);
-    }  
+	int n=Integer.parseInt(args[0]);
+	if(n>0)
+	{
+		System.out.println("Positive");
+	}
+	else if(n==0)
+	{
+		System.out.println("Zero");
+	}
+	else if(n<0)
+	{
+		System.out.println("Nagetive");
+	}
+
+}
 }

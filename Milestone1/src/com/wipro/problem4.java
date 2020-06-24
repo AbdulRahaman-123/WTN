@@ -1,17 +1,19 @@
-package com.wipro.Arrays;
+package com.wipro.flow_control_statements;
 
-public class problem4 
+public class problem4
 {
 	public static void main(String args[])
 	{
-		int []arr=new int[] {68,73,69,76,82};
-		String s=null;
-		for(int i:arr)
+		char i='k';
+		char j='a';
+		if(i<j)
 		{
-			s=Character.toString((char)i);
-			System.out.println(s);
+			System.out.println(i+" "+j);
 		}
-		
+		else
+		{
+			System.out.println(j+" "+i);
+		}
 	}
 
 }
