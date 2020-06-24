@@ -1,22 +1,28 @@
-package com.wipro.flow_control_statements;
+package com.wipro.Arrays;
 
 public class problem6
 {
-	public static void main(String []args)
+	public static void main(String args[])
 	{
-		String gender=args[0];
-		int age=Integer.parseInt(args[1]);
-		double interest;
-		if(gender=="Female"&&(age>=1 && age<=58))
-		interest=8.2;
-		else if(gender=="Female"&&(age>=59 && age<=100))
-		interest=9.2;
-		else if(gender=="male"&&(age>=1 && age<=58))
-		interest=8.4;
-		else
-		interest=10.5;
-		System.out.println("percentage of interest is "+" "+interest+"%");
-	}
+		int arr[]=new int [] {22,2,1,43,5};
+		int temp;
+		 for (int i=0;i<arr.length;i++) 
+	        {
+	            for (int j=i+1;j<arr.length;j++) 
+	            {
+	                if (arr[i]>arr[j]) 
+	                {
+	                    temp=arr[i];
+	                    arr[i]=arr[j];
+	                    arr[j]=temp;
+	                }
+	            }
+	        }
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.print(" "+arr[i]);
+		}
 		
-}
+	}
 
+}

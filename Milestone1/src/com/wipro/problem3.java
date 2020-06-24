@@ -1,18 +1,23 @@
-package com.wipro.flow_control_statements;
+package com.wipro.Arrays;
 
-public class problem3
+public class problem3 
 {
 	public static void main(String args[])
 	{
-		if(args.length==0)
+		int arr[]=new int[] {22,23,43,54,53};
+		int i;
+		int f=-1;
+		int flag=Integer.parseInt(args[0]);
+		for(i=0;i<arr.length;i++)
 		{
-			System.out.println("No Values");
+			if(flag==arr[i])
+			{
+                 f=i;  				
+			}
+			else
+				continue;
 		}
-		else
-		{
-			for(String i:args)
-				System.out.print(i+",");
-		}
+		System.out.println(f);
 	}
 
 }
